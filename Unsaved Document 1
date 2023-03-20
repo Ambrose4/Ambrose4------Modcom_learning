@@ -1,0 +1,24 @@
+INSERT INTO patient(patient_id,Fname,Lname,Gender,DOB,Reg_date)VALUES('1016','dan','orina','male','1967-02-02','2017-02-01')
+
+INSERT INTO doctors(doctor_id,Fname,Lname,Gender,speciality,experience,county,phone)VALUES('507','samson','nyaberi','male','surgeon','6','nairobi','+254780104054')
+
+SELECT fname FROM patient
+
+
+
+
+
+SELECT * FROM `patient`
+
+SELECT * FROM `patient` ORDER BY fname ASC
+
+SELECT * FROM `patient` ORDER BY fname DESC
+
+SELECT * FROM `patient` ORDER BY fname DESC limit 6
+
+UPDATE patient set dob = '1988-01-01' where patient_id = '1001'
+
+UPDATE patient set dob = '1988-01-01', fname = 'kelvin' where patient_id = '1001'
+
+DELETE FROM patient where patient_id = '1016'
+
